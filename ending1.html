@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title>Reflection </title>
+    <style>
+         body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('car.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white; 
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            /* FANCY HEADER STYLING */
+            font-size: 3.5rem; 
+            letter-spacing: 8px; 
+            text-transform: uppercase; 
+            
+            /* Red atmospheric glow for the dark/scary theme */
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+            
+            /* NARROWING THE HEADER */
+            max-width: 500px; 
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 50px;
+            font-weight: 300;
+            color: #dddddd; /* Slightly off-white for better contrast */
+        }
+
+        .choice-container {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .choice-box {
+            border: 2px solid white;
+            padding: 18px 35px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            background: rgba(255, 255, 255, 0.05);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .choice-box:hover {
+            background: white;
+            color: black;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body>
+    <h1>GONE</h1>
+    <p>You look in the mirror. Your reflection is missing. You feel a cold hand on your shoulder. Everything goes black. (The End)</p>
+    <a href="car_main.html" class="choice-box">Restart the Loop</a>
+</body>
+</html>
